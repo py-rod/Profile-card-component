@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+
+
+main{
+    background-image: url("../assets/bg-pattern-top.svg"), url("../assets/bg-pattern-bottom.svg"); 
+    background-size:auto 75%, auto 70%, contain;
+    background-position: left -100px top -100px, bottom -100px right -100px;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #19a1ad;
+    padding: 90px 150px;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.card{
+    background-image: url("../assets/bg-pattern-card.svg");
+    background-size: 100% 150px, cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: auto;
+    padding: 90px 0 0;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+.card__container__img{
+    border-radius: 50%;
+    height: 95px;
+    width: 95px;
+    
+}
+
+
+.card__content{
+    margin-bottom: 25px;
+}
+
+.card__container__img  > img{
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 15px;
+}
+
+.card__name{
+    font-size: 1.1rem;
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 10px;
+}
+
+
+.card__name > span{
+    margin-left: 8px;
+    color: var(--Dark-grayish-blue);
+}
+
+
+.card__country{
+    font-size: .95rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.card__container__stadi{
+    border-top: 1px solid rgba(212, 212, 212, 0.726);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__number__stadi{
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.card__title__stadi{
+    font-size: .8rem;
+    color: var(--Dark-gray);
+}
+
+
+
+@media (max-width:650px) {
+    main{
+        background-size:auto 55%, auto 50%, contain;
+        padding: 90px 20px;
+    }
+}
+
+
+
+@media (max-width:400px) {
+    main{
+        background-size:auto 45%, auto 45%, contain;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
